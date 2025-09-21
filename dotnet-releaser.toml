@@ -1,0 +1,7 @@
+# configuration file for dotnet-releaser
+[msbuild]
+project = "UniqueNameGenerator.slnx"
+
+[github]
+user = "michael-wolfenden"
+repo = "UniqueNameGenerator"

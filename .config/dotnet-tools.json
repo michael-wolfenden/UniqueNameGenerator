@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "isRoot": true,
+  "tools": {
+    "dotnet-releaser": {
+      "version": "0.13.1",
+      "commands": [
+        "dotnet-releaser"
+      ],
+      "rollForward": false
+    },
+    "dotnet-outdated-tool": {
+      "version": "4.6.8",
+      "commands": [
+        "dotnet-outdated"
+      ],
+      "rollForward": false
+    },
+    "nuget-license": {
+      "version": "3.1.7",
+      "commands": [
+        "nuget-license"
+      ],
+      "rollForward": false
+    }
+  }
+}

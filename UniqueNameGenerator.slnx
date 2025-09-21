@@ -1,0 +1,19 @@
+﻿<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".editorconfig" />
+    <File Path=".gitattributes" />
+    <File Path=".gitignore" />
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Packages.props" />
+    <File Path="dotnet-releaser.toml" />
+    <File Path="global.json" />
+    <File Path=".config\dotnet-tools.json" />
+    <File Path="THIRD-PARTY-LICENSES.txt" />
+    <File Path="README.md" />
+    <File Path="CONTRIBUTING.md" />
+    <File Path="LICENSE.txt" />
+  </Folder>
+  <Project Path="build\build.csproj" Type="Classic C#" />
+  <Project Path="UniqueNameGenerator.Tests\UniqueNameGenerator.Tests.csproj" Type="Classic C#" />
+  <Project Path="UniqueNameGenerator\UniqueNameGenerator.csproj" Type="Classic C#" />
+</Solution>

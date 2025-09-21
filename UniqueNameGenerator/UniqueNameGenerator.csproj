@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="MinVer">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+    </ItemGroup>
+
+    <PropertyGroup>
+        <Authors>Michael Wolfenden</Authors>
+        <Copyright>Copyright 2025-$([System.DateTime]::Now.ToString(yyyy)) Michael Wolfenden</Copyright>
+        <PackageProjectUrl>https://github.com/michael-wolfenden/UniqueNameGenerator</PackageProjectUrl>
+        <PackageTags>random names;unique names;name generator;word generator;string generator</PackageTags>
+        <RepositoryType>git</RepositoryType>
+        <PackageReleaseNotes>https://github.com/michael-wolfenden/UniqueNameGenerator/blob/master/changelog.md</PackageReleaseNotes>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageIcon>PackageIcon.png</PackageIcon>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+    </PropertyGroup>
+
+    <ItemGroup Label="Package files">
+        <None Include="..\PackageIcon.png" Pack="true" Visible="false" PackagePath=""/>
+        <None Include="..\LICENSE.txt" Pack="true" Visible="false" PackagePath=""/>
+        <None Include="..\README.md" Pack="true" Visible="false" PackagePath="README.md"/>
+    </ItemGroup>
+</Project>

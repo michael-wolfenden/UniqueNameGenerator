@@ -1,0 +1,52 @@
+﻿[assembly: System.Runtime.Versioning.TargetFramework(".NETStandard,Version=v2.0", FrameworkDisplayName=".NET Standard 2.0")]
+namespace UniqueNameGenerator
+{
+    public class Adjectives : UniqueNameGenerator.IWordList
+    {
+        public static readonly UniqueNameGenerator.Adjectives WordList;
+        public string GetWord(System.Random random) { }
+    }
+    public class Animals : UniqueNameGenerator.IWordList
+    {
+        public static readonly UniqueNameGenerator.Animals WordList;
+        public string GetWord(System.Random random) { }
+    }
+    public class Colors : UniqueNameGenerator.IWordList
+    {
+        public static readonly UniqueNameGenerator.Colors WordList;
+        public string GetWord(System.Random random) { }
+    }
+    public interface IWordList
+    {
+        string GetWord(System.Random random);
+    }
+    public class Names : UniqueNameGenerator.IWordList
+    {
+        public static readonly UniqueNameGenerator.Names WordList;
+        public string GetWord(System.Random random) { }
+    }
+    public class Numeric : UniqueNameGenerator.IWordList
+    {
+        public static readonly UniqueNameGenerator.Numeric WordList;
+        public UniqueNameGenerator.Numeric Format(System.Func<int, string> formatter) { }
+        public string GetWord(System.Random random) { }
+        public UniqueNameGenerator.Numeric Max(int max) { }
+        public UniqueNameGenerator.Numeric Min(int min) { }
+    }
+    public enum Style
+    {
+        LowerCase = 0,
+        UpperCase = 1,
+        TitleCase = 2,
+    }
+    public class UniqueName
+    {
+        public UniqueName(UniqueNameGenerator.IWordList wordList, params UniqueNameGenerator.IWordList[] wordLists) { }
+        public UniqueNameGenerator.UniqueName Format(System.Func<string, string> formatter) { }
+        public UniqueNameGenerator.UniqueName Format(UniqueNameGenerator.Style style) { }
+        public string Generate() { }
+        public UniqueNameGenerator.UniqueName Seed(int seed) { }
+        public UniqueNameGenerator.UniqueName Seed(string seed) { }
+        public UniqueNameGenerator.UniqueName Separator(string separator) { }
+    }
+}
