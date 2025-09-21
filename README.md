@@ -6,7 +6,7 @@
 <h4 align="center"><br>Unique name generator is a package for generating random and unique names.<br></h4>
 <div align="center">
 
-[![](https://img.shields.io/github/actions/workflow/status/michael-wolfenden/UniqueNameGenerator/build.yml?branch=main)](https://github.com/michael-wolfenden/UniqueNameGenerator/actions?query=branch%3amain)
+[![](https://img.shields.io/github/actions/workflow/status/michael-wolfenden/UniqueNameGenerator/ci.yaml?branch=main)](https://github.com/michael-wolfenden/UniqueNameGenerator/actions?query=branch%3amain)
 [![](https://img.shields.io/github/release/michael-wolfenden/UniqueNameGenerator.svg?label=latest%20release&color=007edf)](https://github.com/michael-wolfenden/UniqueNameGenerator/releases/latest)
 [![](https://img.shields.io/nuget/dt/UniqueNameGenerator.svg?label=downloads&color=007edf&logo=nuget)](https://www.nuget.org/packages/UniqueNameGenerator)
 [![](https://img.shields.io/librariesio/dependents/nuget/UniqueNameGenerator.svg?label=dependent%20libraries)](https://libraries.io/nuget/UniqueNameGenerator)
