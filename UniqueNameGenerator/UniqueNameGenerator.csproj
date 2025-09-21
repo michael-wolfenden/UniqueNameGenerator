@@ -12,6 +12,7 @@
 
     <PropertyGroup>
         <Authors>Michael Wolfenden</Authors>
+        <Description>Unique name generator is a package for generating random and unique names.</Description>
         <Copyright>Copyright 2025-$([System.DateTime]::Now.ToString(yyyy)) Michael Wolfenden</Copyright>
         <PackageProjectUrl>https://github.com/michael-wolfenden/UniqueNameGenerator</PackageProjectUrl>
         <PackageTags>random names;unique names;name generator;word generator;string generator</PackageTags>
