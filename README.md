@@ -55,7 +55,9 @@ new UniqueName(
     Colors.WordList,
     Adjectives.WordList,
     Animals.WordList
-).Seed(120498).Generate(); // "turquoise_critical_hornet"
+)
+.Seed(120498)
+.Generate(); // "turquoise_critical_hornet"
 ```
 
 ```csharp
@@ -64,7 +66,9 @@ new UniqueName(
     Colors.WordList,
     Adjectives.WordList,
     Animals.WordList
-).Seed("seed as a string"); // "tan_sour_ermine"
+)
+.Seed("seed as a string")
+.Generate(); // "tan_sour_ermine"
 ```
 
 ```csharp
@@ -73,7 +77,9 @@ new UniqueName(
     Colors.WordList,
     Adjectives.WordList,
     Animals.WordList
-).Separator("|SPACE|").Generate(); // e.g. "blue|SPACE|kind|SPACE|tiger"
+)
+.Separator("|SPACE|")
+.Generate(); // e.g. "blue|SPACE|kind|SPACE|tiger"
 ```
 
 ```csharp
@@ -91,19 +97,25 @@ new UniqueName(
     Colors.WordList,
     Adjectives.WordList,
     Animals.WordList
-).Format(Style.LowerCase).Generate(); // "turquoise_critical_hornet"
+)
+.Format(Style.LowerCase)
+.Generate(); // "turquoise_critical_hornet"
 
 new UniqueName(
     Colors.WordList,
     Adjectives.WordList,
     Animals.WordList
-).Format(Style.UpperCase).Generate(); // "TURQUOISE_CRITICAL_HORNET"
+)
+.Format(Style.UpperCase)
+.Generate(); // "TURQUOISE_CRITICAL_HORNET"
 
 new UniqueName(
     Colors.WordList,
     Adjectives.WordList,
     Animals.WordList
-).Format(Style.TitleCase).Generate(); // "Turquoise_Critical_Hornet"
+)
+.Format(Style.TitleCase)
+.Generate(); // "Turquoise_Critical_Hornet"
 ```
 
 ```csharp
@@ -113,7 +125,8 @@ var customFormat = new UniqueName(
     Adjectives.WordList,
     Animals.WordList
 )
-.Format(word => Regex.Replace(word, "e", "!")) .Generate(); // "turquois!_critical_horn!t"
+.Format(word => Regex.Replace(word, "e", "!"))
+.Generate(); // "turquois!_critical_horn!t"
 ```
 
 ```csharp
